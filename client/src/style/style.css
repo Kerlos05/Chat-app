@@ -1,0 +1,77 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.loginContainer {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 350px;
+    width: 400px;
+    padding: 20px; 
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 100%, 0.9%);
+    color: black;
+    backdrop-filter: blur(10px); /* Add a blur effect */
+    box-shadow: 0 0 30px rgba(0, 2, 1, .3)
+}
+  
+.image{
+    position: absolute;
+    top: -80px; 
+    background-color: rgb(16, 16, 83);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.userIcon{
+    color: rgb(255, 255, 255);
+    transform: scale(5);
+}
+
+.input-group input{
+    background-color: transparent;
+}
+
+form{
+    margin-top: 40px;
+}
+
+.input-group-text{
+    background-color: rgba(8, 4, 72, 0.949) !important;
+}
+
+.form-control{
+    background-color:cadetblue !important;
+    user-select: none;
+    margin: auto;
+    background-color: rgb(230, 230, 230); 
+}
+
+.display_message{
+    position: relative;
+    top: 45px; 
+}
+
+.display_message > p{
+    margin-bottom: 0px;
+}
+
+nav{
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+nav button{
+    border: 0px;
+}
