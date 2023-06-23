@@ -3,12 +3,8 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const credentials = require('./middleware/credentials');
-const verifyJWT = require('./middleware/verifyJWT');
 const corsOptions = require('./config/corsOptions'); 
-const User = require('./model/User');
 
-
-const mongoose = require('mongoose');
 const connectDB = require('./config/dbConn');
 const PORT = process.env.PORT || 3500;
 

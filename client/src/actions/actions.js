@@ -116,39 +116,3 @@ export const deleteMessage = throttle(
   );
 
 
-
-
-
-
-// export const deleteMessage = async(currentUser, activeFriend, messageContent, setReceivedMessages) => {
-//     await new Promise(r => setTimeout(r, 400)); 
-    
-//     const data= {
-//         currentUser: currentUser, 
-//         friend: activeFriend, 
-//         messageToRemove: messageContent, 
-//     }
-
-//     fetch('http://localhost:3500/handleMessage', {
-//         method: 'DELETE',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(data)
-//     })
-//     .then(res => {
-//         if(res.ok){
-//             setReceivedMessages((prevMessages) => {
-//                 const messageIndex = prevMessages.findIndex(
-//                 (message) => message === messageContent
-//                 );
-//                     if (messageIndex !== -1) {
-//                     const updatedMessages = [...prevMessages];
-//                     updatedMessages.splice(messageIndex, 1);
-//                     return updatedMessages;
-//                 }
-//                 return prevMessages;
-//             });
-//         }
-//     })
-// }
